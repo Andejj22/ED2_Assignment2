@@ -1,0 +1,7 @@
+figure;
+subplot(3,2,1);
+plot(u_g_abc.Time,u_g_abc.Data(:,1),'r'); grid on; hold on;
+plot(u_g_abc.Time,u_g_abc.Data(:,2),'g');
+plot(u_g_abc.Time,u_g_abc.Data(:,3),'b');
+ylim([-400 400]);
+legend('u_{ga}','u_{gb}','u_gc}',)
