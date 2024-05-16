@@ -4,7 +4,7 @@ subplot(3,2,1);
 plot(u_g_abc.time,u_g_abc.data(:,1),'r','LineWidth',1); hold on; grid on;
 plot(u_g_abc.time,u_g_abc.data(:,2),'g','LineWidth',1);
 plot(u_g_abc.time,u_g_abc.data(:,3),'b','LineWidth',1);
-legend('u_{ga}','u_{gb}','u_{gc}','location','east');
+legend('$$u_{ga}$$','$$u_{gb}$$','$$u_{gc}$$','location','east', 'Interpreter', 'Latex');
 ylabel('Grid Voltage (V)');
 ylim([-400 400]);
 %% Power
@@ -13,7 +13,7 @@ plot(i_c.time,1E-3*3/2*real(i_c.data).*abs_u_g.data,'b','LineWidth',1); hold on;
 plot(i_c.time,1E-3*-3/2*imag(i_c.data).*abs_u_g.data,'r','LineWidth',1);
 plot(i_c.time,1E-3*p_g_ref.data,'b');
 plot(i_c.time,1E-3*q_g_ref.data,'r');
-legend('p_g','q_g','p_{g,ref}','q_{g,ref}','Location','southeast');
+legend('$$p_g$$','$$q_g$$','$$p_{g,ref}$$','$$q_{g,ref}$$','Location','southeast', 'Interpreter', 'Latex');
 ylabel('Power (kW)');
 ylim([-2 6]);
 %% Converter Current
@@ -21,7 +21,7 @@ subplot(3,2,3);
 plot(i_c_abc.time,i_c_abc.data(:,1),'r','LineWidth',1); hold on; grid on;
 plot(i_c_abc.time,i_c_abc.data(:,2),'g','LineWidth',1);
 plot(i_c_abc.time,i_c_abc.data(:,3),'b','LineWidth',1);
-legend('i_{ca}','i_{cb}','i_{cc}','location','east');
+legend('$$i_{ca}$$','$$i_{cb}$$','$$i_{cc}$$','location','east', 'Interpreter', 'Latex');
 ylabel('Converter Current (A)');
 ylim([-15 15]);
 subplot(3,2,4);
@@ -29,7 +29,7 @@ plot(i_c.time,real(i_c.data),'b','LineWidth',1); hold on; grid on;
 plot(i_c.time,imag(i_c.data),'r','LineWidth',1);
 plot(i_c.time,real(i_c_ref.data),'b');
 plot(i_c.time,imag(i_c_ref.data),'r');
-legend('i_{cd}','i_{cq}','i_{cd,ref}','i_{cq,ref}','location','east');
+legend('$$i_{cd}$$','$$i_{cq}$$','$$i_{cd,ref}$$','$$i_{cq,ref}$$','location','east', 'Interpreter', 'Latex');
 ylabel('Converter Current (A)');
 ylim([-15 15]);
 %% Angle
