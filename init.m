@@ -21,3 +21,4 @@ w0_pll = 2*pi*20;       % Undamped natural frequency
 % DC-bus voltage controller (needed in Section 3)
 w0_dc = 2*pi*30;        % DC-bus voltage controller: undamped natural frequency
 p_max = 10e3;           % Maximum limit for the power reference
+q_g_step = 4e3;
